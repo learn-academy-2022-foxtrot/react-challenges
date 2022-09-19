@@ -1,55 +1,67 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8" />
-    <script
-      src="https://unpkg.com/react@18/umd/react.development.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-      crossorigin
-    ></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <title>Intro to React</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="react-container"></div>
 
     <script type="text/babel">
-      const App = () => {
-        return (
-                    <div>
-        <h1>Hello Fox</h1>
+        const App = () => {
+            return (
+                <div>
+                    <h1>Hello Fox</h1>
+                    <ClassList />
+                    <Footer />
+                </div>
 
-        <ul> Guan </ul>
-        <ul> Ari</ul>
-        <ul> Athian</ul>
-        <ul> Christian</ul>
-        <ul> David Thomas</ul>
-        <ul> Goran</ul>
-        <ul> Heath</ul>
-        <ul> Jeremy</ul>
-        <ul> Joseph</ul>
-        <ul> Kyle</ul>
-        <ul> Lyssa</ul>
-        <ul> Matthew</ul>
-        <ul> Michy</ul>
-        <ul> Nate</ul>
-        <ul> Nico</ul>
-        <ul> Olena</ul>
-        <ul> Tawn</ul>
-        <ul> Zack</ul>
-             <footer> All Rights Reserved  GuanƉoge</footer>
-        </div>
+            )
+        }
 
-   
-        )
-      }
+        const ClassList = () => {
 
-      const domContainer = document.querySelector("#react-container")
-      const root = ReactDOM.createRoot(domContainer)
-      root.render(<App />)
+            return (
+                <>
+                    <ul> Guan </ul>
+                    <ul> Ari</ul>
+                    <ul> Athian</ul>
+                    <ul> Christian</ul>
+                    <ul> David Thomas</ul>
+                    <ul> Goran</ul>
+                    <ul> Heath</ul>
+                    <ul> Jeremy</ul>
+                    <ul> Joseph</ul>
+                    <ul> Kyle</ul>
+                    <ul> Lyssa</ul>
+                    <ul> Matthew</ul>
+                    <ul> Michy</ul>
+                    <ul> Nate</ul>
+                    <ul> Nico</ul>
+                    <ul> Olena</ul>
+                    <ul> Tawn</ul>
+                    <ul> Zack</ul>
+
+                </>
+            )
+
+
+        }
+
+        const Footer = () => {
+            return <footer> All Rights Reserved  GuanƉoge </footer>
+        }
+
+
+        const domContainer = document.querySelector("#react-container")
+        const root = ReactDOM.createRoot(domContainer)
+        root.render(<App />)
     </script>
-  </body>
+</body>
+
 </html>
