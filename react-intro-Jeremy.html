@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Intro to React</title>
+  </head>
+  <body>
+    <div id="react-container"></div>
+
+    <script type="text/babel">
+      function App() {
+        return (
+          <div>
+            <Header />
+            <Content />
+            <Footer />
+          </div>
+        );
+      }
+
+      const Header = () => {
+        return (
+          <div>
+            <h1> Foxtrot 2022 </h1>
+          </div>
+        );
+      };
+
+      const Content = () => {
+        return (
+          <div>
+            <ul>
+              <li>Zack</li>
+              <li>David</li>
+              <li>Olena</li>
+              <li>Joseph</li>
+              <li>Kyle</li>
+              <li>Nico</li>
+              <li>Tawn</li>
+              <li>Nate</li>
+              <li>Athian</li>
+              <li>Matthew</li>
+              <li>Goran</li>
+              <li>Guan</li>
+              <li>Jeremy</li>
+              <li>Heath</li>
+              <li>Ari</li>
+              <li>Lyssa</li>
+              <li>Michy</li>
+              <li>Christian</li>
+              <li>Elyse</li>
+              <li>Tricia</li>
+            </ul>
+          </div>
+        );
+      };
+
+      const Footer = () => {
+        return (
+          <div>
+            <h3> Jeremy Duncan </h3>
+          </div>
+        );
+      };
+
+      const domContainer = document.querySelector("#react-container");
+      const root = ReactDOM.createRoot(domContainer);
+      root.render(<App />);
+    </script>
+  </body>
+</html>
