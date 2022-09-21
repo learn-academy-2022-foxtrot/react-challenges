@@ -1,10 +1,11 @@
-*{
-  font-family: 'Grenze Gotisch', cursive;
+* {
+  font-family: "Grenze Gotisch", cursive;
   list-style: none;
   overflow: auto;
 }
 body {
-  background: url(https://cdn.mos.cms.futurecdn.net/sFVrDZdXAsnM9a4D9C7LsR-970-80.jpg.webp) no-repeat center center fixed;
+  background: url(https://cdn.mos.cms.futurecdn.net/sFVrDZdXAsnM9a4D9C7LsR-970-80.jpg.webp)
+    no-repeat center center fixed;
   background-size: cover;
 }
 .container {
@@ -16,21 +17,41 @@ body {
 a {
   text-decoration: none;
 }
+h1 {
+  font-size: 7rem;
+  text-shadow: 3px 5px 6px rgb(198, 34, 34);
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .diceContainer {
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.325);
-  margin-top: 30rem;
+  /* background-color: rgba(255, 255, 255, 0.123); */
+  margin-top: 10rem;
+  text-shadow: 2px 2px #fff;
+  font-size: 2rem;
+  padding: 1rem;
 }
 
 .diceBox {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: red;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 9%,
+    rgba(150, 22, 0, 1) 63%,
+    rgba(255, 38, 0, 1) 76%
+  );
   color: black;
+  text-shadow: 2px 2px 3px #fff;
   width: 12rem;
   height: 12rem;
   font-size: 4rem;
@@ -53,16 +74,16 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  
 }
 .rollBox {
-  margin-top: 20rem;
-  background-color: rgba(255, 255, 255, 0.325);
+  margin-top: 10rem;
+  background-color: rgba(255, 255, 255, 0.123);
   width: 10rem;
   font-size: 2.5rem;
   flex: 0 0 350px;
-  overflow-y: scroll;
-  overflow-x: scroll;
+  overflow-y: auto;
+  overflow-x: auto;
   white-space: nowrap;
-  height: 12rem;
+  height: 15rem;
+  text-shadow: 2px 2px #fff;
 }

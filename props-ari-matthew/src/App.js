@@ -25,6 +25,9 @@ const App = () => {
 
   return (
     <>
+      <div className="title">
+        <h1>Welcome to the Hellfire Club</h1>
+      </div>
       <div className="container">
         <div className="diceContainer">
           <div className="diceBox">
