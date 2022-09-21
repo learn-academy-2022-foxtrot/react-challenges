@@ -26,13 +26,26 @@ const App = () => {
 
   return (
     <>
-      <a href="#" onClick={handleClick}>
-        {" "}
-        <Dice dice={dice} index={randomInx} count={rollCount} />
-      </a>
-      {rollCount.map((value, index) => {
-        return <RollCounter key={index} count={value} />;
-      })}
+      <div className="container">
+        <div className="diceBox">
+          <div>    
+            <a href="#" onClick={handleClick}>
+          {" "}
+          <Dice dice={dice} index={randomInx} count={rollCount} />
+            </a>
+        </div>
+      
+          <div>
+            <h2>Click box to roll for initiative</h2>
+          </div>
+        </div>
+
+        <div className="rollBox">
+        {rollCount.map((value, index) => {
+          return <RollCounter key={index} count={value} />;
+        })}
+        </div>
+      </div>
     </>
   );
 };
