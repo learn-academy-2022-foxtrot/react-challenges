@@ -4,12 +4,12 @@ const Dice = (props) => {
     return(
         <div>
         <div style = {{
-            height : "90 px",
-            width : "90 px",
+            backgroundColor: "white",
+            height : "500 px",
+            width : "500 px",
             borderStyle : "solid",
             margin:"auto"
         }}>{props.dice[props.index]}</div>
-        <div> other box</div>
         </div>
     )
 }
