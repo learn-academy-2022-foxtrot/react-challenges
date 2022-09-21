@@ -13,10 +13,9 @@ const App = () => {
 
   const handleClick = () => {
     let randomNumber = Math.floor(Math.random() * dice.length);
-
     setRandomInx(randomNumber);
-    console.log(typeof rollCount, rollCount);
-    rollCount.push(randomNumber + 1);
+    // rollCount.push(randomNumber + 1);
+    setRollCount([...rollCount, dice[randomInx]]);
     // setRollCount((rollCount[0] = <RollCounter />));
   };
 
@@ -27,23 +26,23 @@ const App = () => {
   return (
     <>
       <div className="container">
-        <div className="diceBox">
-          <div>    
+        <div className="diceContainer">
+          <div className="diceBox">
             <a href="#" onClick={handleClick}>
-          {" "}
-          <Dice dice={dice} index={randomInx} count={rollCount} />
+              {" "}
+              <Dice dice={dice} index={randomInx} count={rollCount} />
             </a>
-        </div>
-      
+          </div>
+
           <div>
             <h2>Click box to roll for initiative</h2>
           </div>
         </div>
 
         <div className="rollBox">
-        {rollCount.map((value, index) => {
-          return <RollCounter key={index} count={value} />;
-        })}
+          {rollCount.map((value, index) => {
+            return <RollCounter key={index} count={value} />;
+          })}
         </div>
       </div>
     </>
