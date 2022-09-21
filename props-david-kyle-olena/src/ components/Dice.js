@@ -1,10 +1,14 @@
+
 let Dice = (props) => {
   return(
-    <>
-      <h2>This is a dice</h2>  
-      <h1>{props.dice[props.index]}</h1>  
-    </>
+      <div>
+          <div>CLICK BUTTON ROLL</div>
+          <div className = "box" style={{border: '5px solid black', height: '300px', width: '300px', fontSize: '150px', margin: 'auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{props.dice[props.index]}  
+           </div>
+        
+  
+
+      </div>
   )
 }
-
-export default Dice
+export default Dice;
