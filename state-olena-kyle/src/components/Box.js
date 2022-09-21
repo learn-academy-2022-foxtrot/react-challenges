@@ -3,7 +3,10 @@ import React, {useState} from 'react'
 const Box = () => {
     const [color, setColor] = useState("white")
     const changeColor = () => {
-        setColor("red")
+        setColor ["red", "orange", "yellow", "green", "blue", "purple", "pink"]
+        const colorChanger = (changeColor) => {
+            for (let i = 0; i ,)
+        }
         
     }
     return (
