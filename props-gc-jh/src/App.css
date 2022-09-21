@@ -1,0 +1,46 @@
+div {
+  display: flex;
+  margin: auto;
+}
+
+.app {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 2rem;
+  clear: left;
+}
+
+.dice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  justify-content: center;
+  text-align: center;
+}
+
+.rolls,
+.dice {
+  border: 1px solid black;
+  width: 12rem;
+  height: 16rem;
+  margin-top: 3rem;
+}
+
+.roll-dice {
+  border: 1px solid black;
+  width: 5rem;
+  height: 5rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.list-of-nums {
+  align-self: left;
+}
