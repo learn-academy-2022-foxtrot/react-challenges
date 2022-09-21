@@ -1,3 +1,12 @@
+*{
+  font-family: 'Grenze Gotisch', cursive;
+  list-style: none;
+  overflow: auto;
+}
+body {
+  background: url(https://cdn.mos.cms.futurecdn.net/sFVrDZdXAsnM9a4D9C7LsR-970-80.jpg.webp) no-repeat center center fixed;
+  background-size: cover;
+}
 .container {
   display: flex;
   flex-direction: row;
@@ -12,6 +21,8 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.325);
+  margin-top: 30rem;
 }
 
 .diceBox {
@@ -19,8 +30,10 @@ a {
   align-items: center;
   justify-content: center;
   background-color: red;
+  color: black;
   width: 12rem;
   height: 12rem;
+  font-size: 4rem;
   clip-path: polygon(
     50% 0%,
     80% 10%,
@@ -40,4 +53,16 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  
+}
+.rollBox {
+  margin-top: 20rem;
+  background-color: rgba(255, 255, 255, 0.325);
+  width: 10rem;
+  font-size: 2.5rem;
+  flex: 0 0 350px;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  white-space: nowrap;
+  height: 12rem;
 }
