@@ -1,21 +1,22 @@
 import React from "react"
-import {useState} from "react"
 
 const MenuItems = (props) => {
-const [onButton, setOnButton] = useState (true)//true equals button is on
+console.log(props.menu.name)
 
-
-const handleButtonClick = () => {
-  setOnButton(false)
+const handleButtonClick = (e) => {
+  props.upDatedOrder(e.currentTarget.id)
 }
-
+// console.log(props.upDatedOrder)
   return (
     <div className='menu-items'>
           {props.menu.map((item, index) => {
-            return <> <li  key={index}>{item.name}</li>
-            
-            <button onClick={handleButtonClick}>Order</button></>
-            
+            return <> 
+            <li  key={index}>{item.name} {item.price}</li>
+            {item.ordered === false ? <button id={index} onClick={handleButtonClick}>Order</button>: 
+            <p>Ordered</p>
+            }
+           </>
+        
             //"item" is equal to menu[0]. Adding ".name" will give back "bacon" on first iteration 
           })}
       
