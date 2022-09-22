@@ -6,8 +6,6 @@ return(
         <ul>
             <li> {props.rolls}</li> </ul>
 
-    
-  
       </div>
     )
  }
