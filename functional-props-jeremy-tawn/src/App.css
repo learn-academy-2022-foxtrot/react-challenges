@@ -1,0 +1,33 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.menuItem {
+  display: flex;
+  gap: 5px;
+  justify-content: left;
+  align-items: center;
+  margin: 0px;
+  height: 30px;
+}
+
+button {
+  height: 20px;
+
+}
+
+.orderList {
+  background-color: salmon;
+  height: 105px;
+}
+
+.orderList>h1 {
+  background-color: pink;
+}
+
+.selectedFood {
+  color: white;
+}
+
