@@ -1,0 +1,22 @@
+.container {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.food {
+  background-color: cornflowerblue;
+  padding: 20px;
+  justify-content: center;
+}
+
+.order {
+  background-color: darksalmon;
+  padding: 20px;
+}
+
+.button {
+  background-color: aliceblue;
+  border: black;
+  border-radius: 8px;
+
+}
