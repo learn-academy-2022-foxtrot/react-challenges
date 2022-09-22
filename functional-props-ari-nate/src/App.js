@@ -3,6 +3,7 @@ import "./App.css";
 import React, { useState } from "react";
 import MenuItem from "./components/MenuItem";
 
+
 const App = () => {
   const [menu, setMenu] = useState([
     { name: "California Burrito", ordered: false, price: 8 },
@@ -22,7 +23,12 @@ const App = () => {
 
   return (
     <>
-      <h1>Jilbertos Taco Shop</h1>
+    <div className="menu_container">
+      <div className="image_container"><img src = "./public/icon.svg"/></div>
+      <div className="title_container">
+      <h1>The Sombrero Spot</h1>
+      </div>
+      <div className="menu_item">
       {menu.map((item, index) => {
         return (
           <MenuItem
@@ -33,6 +39,8 @@ const App = () => {
           />
         );
       })}
+      </div>
+      </div>
     </>
   );
 };
