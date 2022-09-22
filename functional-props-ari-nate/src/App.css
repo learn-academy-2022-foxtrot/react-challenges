@@ -1,0 +1,31 @@
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1{
+    font-family: 'Rock Salt', cursive;
+}
+
+.menu_container {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    
+}
+
+.menu_item {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-direction: row;
+    column-gap: 30px;
+}
+
+.menu_item_box {
+    /* background-color: pink; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
