@@ -3,6 +3,7 @@ import "./App.css";
 import React, { useState } from "react";
 import MenuItem from "./components/MenuItem";
 import CurrentOrder from "./components/CurrentOrder";
+import image from "./components/Images";
 
 const App = () => {
   const [menu, setMenu] = useState([
