@@ -8,12 +8,12 @@ const MenuItem = (props) => {
       return (
         <>
         <h2>{props.item.name}</h2>
-        <h5>{props.item.price}</h5>
+        <h5>{props.item.price}</h5> 
         {/* // when the item ordered (ordered = true) display "Ordered" */}
         {/* conditional rendering */}
         {props.item.ordered && <h3>Ordered</h3>}
         {/* add anonymous function to make function wait until clicked to run */}
-        <button onClick = { () => props.orderItem(props.index)}>Order</button>
+        <button onClick = { () => props.orderItem(props.index)}>Order</button> 
         </>
       )
     }

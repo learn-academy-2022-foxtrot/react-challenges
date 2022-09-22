@@ -7,7 +7,7 @@ const Price = (props) => {
         console.log(props)
       return (
         <>
-        <h2>{props.item.Price}</h2>
+        <h2>{props.item.price}</h2>
         </>
       )
     }

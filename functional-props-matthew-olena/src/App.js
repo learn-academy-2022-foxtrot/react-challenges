@@ -2,7 +2,7 @@ import './App.css';
 import MenuItem from './components/MenuItem';
 import React, { useState } from "react";
 import Price from './components/Price'
-import OrderRecipt from './components/OrderRecipt';
+import OrderReceipt from './components/OrderReceipt';
 
 
 const App = () => {
@@ -17,37 +17,48 @@ const App = () => {
 
   // create a function w/arg that we pass down to MenuItem that will be called when button clicked
 
-  const [orderRecipt, setOrderRecipt] = useState([]);
+  const [orderReceipt, setOrderReceipt] = useState([]);
 
   // const handleClick = () => {
-  //   setOrderRecipt([...orderRecipt])
+  //   setOrderReceipt([...orderReceipt])
   // }
 
   const orderItem = (selectedItem) => {
     // finding the item by index(selectedItem) in the menu array, the accessing the ordered property and reassigning value to true
     menu[selectedItem].ordered = true
-    menu[selectedItem].price = setOrderRecipt
+    //menu[selectedItem].price = setOrderReceipt
     // spread operator
+    setOrderReceipt([...orderReceipt, menu[selectedItem]])
     setMenu([...menu])
+  
+    console.log(orderReceipt)
   };
 
   return (
     <>
+    <div>
       <h1>Deli Delicious</h1>
-      <h2>Menu</h2>
-      {menu.map((item, price, index) => {
+    </div>
+
+      <div>
+        <h2>Menu</h2>
+      </div>
+      
+      {menu.map((item, index) => {
         return <MenuItem item={item} 
                           key={index} 
-                          price={price}
                           orderItem={orderItem}
                           index={index} />;
 
       })}
       <div className= "orderRecipt">
-          {orderRecipt.map((value, price, index) => {
-            return <OrderRecipt key={index} price={price} count={value} />;
+          {orderReceipt.map((value, index) => {
+            return (
+            <OrderReceipt key={index} count={value} />
+            )
           })}
-      </div>
+        
+      </div> 
     </>
   );
 };
