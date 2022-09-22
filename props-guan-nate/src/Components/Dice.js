@@ -3,13 +3,13 @@ const Dice = (props) => {
 
     return(
         <div>
-        <div style = {{
-            backgroundColor: "white",
-            height : "500 px",
-            width : "500 px",
-            borderStyle : "solid",
-            margin:"auto"
-        }}>{props.dice[props.index]}</div>
+        <div style = {{ 
+        backgroundColor: "white",
+        color: "black",
+        border: "5px solid black",
+        width: "250px",
+        height: "250px",
+        margin: "auto" }}>{props.dice[props.index]}</div>
         </div>
     )
 }

@@ -1,6 +1,6 @@
 
 const LogDice = (props) => {
-    return <li key={props.index}>{props.value}</li>
+    return (<li key={props.index}>{props.log}</li>)
 }
 
 

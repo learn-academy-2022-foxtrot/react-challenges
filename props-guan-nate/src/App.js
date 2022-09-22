@@ -18,28 +18,23 @@ const App = () =>{
     let randomNum = Math.floor(Math.random() * dice.length)
 
     setRanIndex(randomNum)
-
-    
-    // setDiceLogger ([...dice,diceLogger.push(ranIndex)])
-   
-    //setDiceLogger(diceLogger.push)
+    console.log(diceLogger)
+    // setDiceLogger(diceLogger.push(dice[randomNum]))
     diceLogger.push(randomNum +1);
-         console.log(diceLogger,'log')
   }
   const logDice = () => {
-    console.log(diceLogger)
-    setDiceLogger ([...dice,diceLogger.push(ranIndex)])
-
+    setDice ([...dice])
+    console.log(dice)
   }
   return(
     <>
-    <h1>Welcome to the Game</h1>
-   <button onClick = {rollDice}>Click  To get Dice roll</button>
+    <h1 style= {{textAlign: "center"}}>Guan and Nate's Dice Roller</h1>
+   <button style = {{margin: "0 auto", display: "block"}} onClick = {rollDice}>Click to roll</button>
+   <p></p>
    <Dice dice = {dice} index={ranIndex}/>
-   {diceLogger.map((value,key)=> {
-    return <LogDice key = {diceLogger} value = {ranIndex}/>
-   })}
-   {/* <LogDice logDice = {logDice} /> */}
+   {diceLogger.map((value, index) => {
+            return <LogDice key={index} log={value} />
+          })}
     </>
   )
 }
