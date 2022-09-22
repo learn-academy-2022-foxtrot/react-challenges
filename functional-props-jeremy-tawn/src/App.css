@@ -1,0 +1,70 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  border: 5px solid red;
+}
+
+.appContainer {
+  display: flex;
+  border: 5px solid black;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+
+}
+
+.menuContainer {
+  border: 5px solid purple;
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuItems {
+  border: 5px solid blue;
+  width: 90px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.orderContainer {
+  border: 5px solid green;
+  height: 350px;
+  width: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listPriceContainer {
+  display: flex;
+}
+
+.listContainer {
+  border: 5px solid salmon;
+  width: 80px;
+  height: 200px;
+  overflow: scroll;
+}
+
+.priceContainer {
+  border: 5px solid cyan;
+  width: 80px;
+  height: 200px;
+  overflow: scroll;
+}
+
+.totalPriceContainer {
+  border: 5px solid yellow;
+}
+
