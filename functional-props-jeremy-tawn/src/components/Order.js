@@ -1,10 +1,15 @@
 const Order = (props) => {
-    const {orderList} = props
+    const { orderList, orderPrice } = props
     return (
-        <div className="orderList">
+        <div className="orderContainer">
             <h1>Order List</h1>
-            <div className="selectedFood">
+            <div className="listPriceContainer">
+            <div className="listContainer">
                 {orderList}
+            </div>
+            <div className="priceContainer">    
+                {orderPrice}
+            </div>>
             </div>
         </div>
     )

@@ -3,7 +3,7 @@ const TotalPrice = (props) => {
     const salesTax = 1.07
     const grandTotal = totalPrice * salesTax
     return (
-        <div className="totalPrice">
+        <div className="totalPriceContainer">
             <h1>Total Price</h1>
             {`\$${totalPrice.toFixed(2)}`}
             <h2>Grand Total with Tax</h2>

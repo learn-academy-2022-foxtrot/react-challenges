@@ -2,32 +2,69 @@
   display: flex;
   flex-direction: column;
   gap: 0px;
+  border: 5px solid red;
 }
 
-.menuItem {
+.appContainer {
   display: flex;
-  gap: 5px;
-  justify-content: left;
+  border: 5px solid black;
+  justify-content: center;
   align-items: center;
-  margin: 0px;
-  height: 30px;
+  flex-direction: column;
 }
 
-button {
-  height: 20px;
+.wrapper {
+  display: flex;
 
 }
 
-.orderList {
-  background-color: salmon;
-  height: 105px;
+.menuContainer {
+  border: 5px solid purple;
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.orderList>h1 {
-  background-color: pink;
+.menuItems {
+  border: 5px solid blue;
+  width: 90px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.selectedFood {
-  color: white;
+.orderContainer {
+  border: 5px solid green;
+  height: 350px;
+  width: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listPriceContainer {
+  display: flex;
+}
+
+.listContainer {
+  border: 5px solid salmon;
+  width: 80px;
+  height: 200px;
+  overflow: scroll;
+}
+
+.priceContainer {
+  border: 5px solid cyan;
+  width: 80px;
+  height: 200px;
+  overflow: scroll;
+}
+
+.totalPriceContainer {
+  border: 5px solid yellow;
 }
 
