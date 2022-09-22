@@ -8,29 +8,38 @@ import FoodCart from './components/FoodCart';
 const App = () => {
 const [menu, setMenu] = useState([
 
-  {foodItem:"carne asada burrito", price:"10.99", ordered: false},
-  {foodItem:"carnita nachos", price:"8.88", ordered: false},
-  {foodItem:"enchiladas", price:"7.99", ordered: false},
-  {foodItem:"al pastor tacos", price:"2.69", ordered: false},
-  {foodItem:"combo quesadillas", price:"6.99", ordered: false}
+  {foodItem:"carne asada burrito", price:10.99, ordered: false},
+  {foodItem:"carnita nachos", price:8.88, ordered: false},
+  {foodItem:"enchiladas", price:7.99, ordered: false},
+  {foodItem:"al pastor tacos", price:2.69, ordered: false},
+  {foodItem:"combo quesadillas", price:6.99, ordered: false}
 ])
-const [orderedItem, setOrderedItem] = useState([{foodItem:null,price:null}]) 
+const [orderedItem, setOrderedItem] = useState([]) 
 
-
+  var total = 0
 const orderItem = (selectedItem) => {
   menu[selectedItem].ordered = true
-  console.log(orderedItem)
+  //console.log(orderedItem)
+  let totalPrice = 0
+
   setMenu([...menu])
   setOrderedItem([...orderedItem,menu[selectedItem]])
   // let totalCost = orderedItem[selectedItem][price].map(value => value+=value)
-  // for (let i=0; i<orderedItem.length;i++){
-  //   // orderedItem.price[i]
-  //   console.log(orderedItem) 
-  //   // if(orderedItem.price(i)) 
-  // }
-  orderedItem.forEach((price)=>{console.log(price)})
+
+  for (let i=0; i<orderedItem.length;i++){
+    totalPrice += orderedItem[i].price
+
+    console.log(totalPrice)
+  }
+  // let totalPrice = orderedItem.forEach((price)=> price += price)
+  // console.log(totalPrice)
   //orderItemCart.push(menu[selectedItem].foodItem)
-  
+      // for(let i = 0; i < orderedItem.price.length;i++){
+    //   console.log(orderedItem.price[i])
+    // }
+    // console.log(orderedItem[i].price) 
+    // console.log(total)
+    // if(orderedItem.price(i)) 
 }
 
 
@@ -52,6 +61,7 @@ return(
     />)
   }
   )}
+  
   </>
 )
 }
