@@ -1,11 +1,11 @@
 import React from 'react'
 
 const Badrobot = (props) => {
-
+    let badRobotArr = ["b", "l", "a"]
     const badUserInput = (input) => {
-        return (input.replace ("blabla"))
-        
+        return (input.badRobotArr)
     }
+
 
     return (
         <>
